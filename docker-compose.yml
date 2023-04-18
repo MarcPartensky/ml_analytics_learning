@@ -1,0 +1,9 @@
+version: "3"
+services:
+  tsi-ml:
+    image: marcpartensky/tsi-ml
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/root/tsi-ml
