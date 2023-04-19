@@ -7,3 +7,11 @@ services:
       - "8888:8888"
     volumes:
       - ./:/root/tsi-ml
+
+  training:
+    image: marcpartensky/tsi-ml-training
+    build: .
+    volumes:
+      - ./:/root/tsi-ml
+    entrypoint: >
+      python ./variational_autoencoder.py
