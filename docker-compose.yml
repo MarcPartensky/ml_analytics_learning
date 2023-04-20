@@ -1,6 +1,6 @@
 version: "3"
 services:
-  tsi-ml:
+  lab:
     image: marcpartensky/tsi-ml
     build: .
     ports:
